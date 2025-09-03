@@ -15,10 +15,7 @@ def fit(p1, p2, p3):
     a = (y1/((x1-x2)*(x1-x3)) + y2/((x2-x1)*(x2-x3)) + y3/((x3-x1)*(x3-x2)))
     b = (y1 - y2 - a * (x1**2 - x2**2)) / (x1 - x2)
     c = y1 - a * x1**2 - b * x1
-
-    # Use isclose with an absolute tolerance for floating point comparison
     xopt = -b / (2 * a) if not isclose(a, 0, abs_tol=1e-9) else float('inf')
-
     discriminant = b**2 - 4 * a * c
     if discriminant < 0:
         yzero = None
@@ -85,3 +82,4 @@ class TestFitFunction(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
+    print(fit(*[(x, 1*x**2 + 2*x + 3) for x in [-10, 5, 2]]))
