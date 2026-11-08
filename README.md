@@ -4,7 +4,7 @@ Curve fitting and regression in pure Python - no NumPy, no SciPy, standard libra
 
 [![CI](https://github.com/michaelkrisper/fitting-interpolation/actions/workflows/ci.yml/badge.svg)](https://github.com/michaelkrisper/fitting-interpolation/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/github/v/tag/michaelkrisper/fitting-interpolation?sort=semver&label=version)](https://github.com/michaelkrisper/fitting-interpolation/releases)
-[![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 
 ## Features
@@ -103,4 +103,4 @@ Changes start with an issue and go through a pull request; see
 
 ## License
 
-[GNU General Public License v3.0](LICENSE)
+MIT - see [LICENSE](LICENSE).
