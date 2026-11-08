@@ -3,6 +3,7 @@
 Curve fitting and regression in pure Python - no NumPy, no SciPy, standard library only.
 
 [![CI](https://github.com/michaelkrisper/fitting-interpolation/actions/workflows/ci.yml/badge.svg)](https://github.com/michaelkrisper/fitting-interpolation/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/github/v/tag/michaelkrisper/fitting-interpolation?sort=semver&label=version)](https://github.com/michaelkrisper/fitting-interpolation/releases)
 [![License: GPL v3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 
@@ -83,6 +84,8 @@ ruff check  # lint
 ```
 
 CI runs both on every push and pull request against Python 3.10 to 3.14.
+Every merge to `main` is tagged with the next patch version; bundled releases
+with release notes come from the Release workflow.
 
 ## Project structure
 
@@ -92,6 +95,11 @@ CI runs both on every push and pull request against Python 3.10 to 3.14.
 | `interpolation.py` | regression methods and a small demo |
 | `examples.py` | examples for every method |
 | `test_*.py` | unit tests |
+
+## Contributing
+
+Changes start with an issue and go through a pull request; see
+[CONTRIBUTING](CONTRIBUTING.md).
 
 ## License
 
